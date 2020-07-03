@@ -24,6 +24,7 @@ func main() {
 	fmt.Println("file downloaded at: ", fileName)
 }
 
+// DownloadFile downloads the file from github gignore rep
 func DownloadFile(url string, filepath string) error {
 	out, err := os.Create(filepath)
 	if err != nil {
